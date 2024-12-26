@@ -81,7 +81,7 @@ global:
 
   oesUI:
     protocol: https
-    host: isd-nav.cnoe.opsmx.org
+    host: isd-argo-in.tcbx.opsmx.org
     # Use below port when hostname above is an external IP instead of a hostname
     #port: 31466
 
@@ -119,7 +119,7 @@ global:
 
   vela:
     protocol: https
-    host: vela-nav.cnoe.opsmx.org
+    host: vela-isd.tcbx.opsmx.org
     #port: 31464
 
     serviceAnnotations: {}
