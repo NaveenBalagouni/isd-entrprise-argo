@@ -1337,7 +1337,7 @@ carinamanager:
   ##
   image:
     repository: carina-manager
-    tag: quay.io/opsmxpublic/carina-manager:v1.15.5-rc3
+    tag: v1.15.5-rc3
     pullPolicy: IfNotPresent
 
   serviceAnnotations: {}
