@@ -42,10 +42,10 @@ imageCredentials:
 installdemoapps: false
 #######################################################################################
 # Set to true if ISD needs to connect to ArgoCD using agent service
-autoconfigureagent: false
+autoconfigureagent: true
 #######################################################################################
 # Set to true if ISD needs to connect to ArgoCD using carina service
-autoconfigurecarina: false
+autoconfigurecarina: true
 #######################################################################################
 # The name provided will reflect in ISD Screen of CD Integration Page and the Agent Account name
 cdagentname: argocd
