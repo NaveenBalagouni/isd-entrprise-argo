@@ -1337,7 +1337,7 @@ carinamanager:
   ##
   image:
     repository: carina-manager
-    tag: v1.15.2
+    tag: v61
     pullPolicy: IfNotPresent
 
   serviceAnnotations: {}
