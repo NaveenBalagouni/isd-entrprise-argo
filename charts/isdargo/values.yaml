@@ -263,7 +263,7 @@ global:
   affinity: {}
   tolerations: []
 
-  enableCentralMonitoring: false
+  enableCentralMonitoring: true
 
   ###############################################################################
   # Set it to false if own LDAP is to be configured
