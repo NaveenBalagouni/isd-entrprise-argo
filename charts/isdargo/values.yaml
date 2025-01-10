@@ -81,7 +81,7 @@ global:
 
   oesUI:
     protocol: https
-    host: isd-argo-in.tcbx.opsmx.org
+    host: tcb-gen2.tcbx.opsmx.org
     # Use below port when hostname above is an external IP instead of a hostname
     #port: 31466
 
@@ -119,7 +119,7 @@ global:
 
   vela:
     protocol: https
-    host: vela-isd.tcbx.opsmx.org
+    host: vela-tcb-gen2.tcbx.opsmx.org
     #port: 31464
 
     serviceAnnotations: {}
@@ -153,9 +153,9 @@ global:
         secretName: kibana-ingress
   ## If ingress is required for prometheus enable enableCentralMonitoring: "ture" and define URL
   prometheus:
-    enabled: false
+    enabled: true
     protocol: https
-    host: prometheus.argo.ninja-test.opsmx.org
+    host: prom-tcb-gen2.tcbx.opsmx.org
     ingress:
       annotations:
         kubernetes.io/ingress.class: nginx
@@ -1829,7 +1829,7 @@ forwarder:
     image: quay.io/opsmxpublic/agent-client:v5.1.1
     serviceType: ClusterIP
     # Value is also used in sapor configuration for kubernetes.agent.serverHostName
-    host: isd-ctrl.tcbx.opsmx.org
+    host: controller-tcb-gen2.tcbx.opsmx.org
 
     ingress:
       annotations:
