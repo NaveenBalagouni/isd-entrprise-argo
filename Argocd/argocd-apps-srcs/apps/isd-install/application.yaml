@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: isd-installation
+  namespace: argocd
+spec:
+  destination:
+    namespace: isd-argo
+    server: 'https://kubernetes.default.svc'
+  source:
+    repoURL: 'https://github.com/NaveenBalagouni/isd-entrprise-argo.git'
+    path: charts/isdargo
+    targetRevision: "HEAD"
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
