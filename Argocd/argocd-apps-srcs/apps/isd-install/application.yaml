@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: 'https://github.com/NaveenBalagouni/isd-entrprise-argo.git'
     path: charts/isdargo
-    targetRevision: "HEAD"
+    targetRevision: HEAD
   project: default
   syncPolicy:
     automated:
